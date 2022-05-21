@@ -1,3 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Macondo&family=Roboto:ital,wght@0,400;1,900&display=swap');
+*
+{
+    box-sizing: border-box;
+}
+
+body
+{
+    font-family: 'Macondo', cursive;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+}
 
 
+.bg
+{
+    background: url('Images/img1.jpg') no-repeat center center/cover;
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100vw;
+    height:100vh;
+    z-index:-1;
+    filter:blur(30px);
+}
 
+
+.loading-Text
+{
+    font-size: 60px;
+    color: white;
+}
