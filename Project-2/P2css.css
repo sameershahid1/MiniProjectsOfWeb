@@ -59,7 +59,7 @@ body
     transition:transform 0.5s ease-in-out;
 }
 
-.right-slide>div
+.right-slide>.d
 {
     background-repeat: no-repeat;
     background-size: cover;
