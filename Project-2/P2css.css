@@ -1,0 +1,156 @@
+
+*
+{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+
+body
+{
+    font-family: 'Ipen Sans','sans-serif';
+    height: 100vh;
+}
+
+
+.slider-container
+{
+    position:relative;
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+}
+
+.left-slide
+{
+    position:absolute;
+    height:100%;
+    width:35%;
+    top: 0;
+    left: 0;
+    transition:transform 0.5s ease-in-out;
+}
+
+.left-slide>div
+{
+    height:100%;
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+.left-slide h1
+{
+    font-size: 40px;
+    margin-bottom: 10px;
+    margin-top:-30px;
+}
+
+.right-slide
+{
+    height:100px;
+    position: absolute;
+    top:0;
+    left: 35%;
+    width:65%;
+    transition:transform 0.5s ease-in-out;
+}
+
+.right-slide>div
+{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+    width: 100vw;
+
+}
+
+button
+{
+ background-color: white;
+    border: none;
+    color:gray;
+    cursor:pointer;
+    font-size: 16px;
+    padding: 15px;
+}
+
+button:hover
+{
+    color: #222;
+}
+
+button:focus
+{
+    outline: none;
+}
+
+
+
+.slider-container .action-buttons button
+{
+    position: absolute;
+    left: 35%;
+    top:50%;
+    z-index: 100;
+}
+
+
+.slider-container .action-buttons .down-button
+{
+    transform: translateX(-100%);
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.slider-container .action-buttons .up-button
+{
+    transform: translatey(-100%);
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+
+.bg-left1
+{
+    background-color: #2b823b;
+}
+
+.bg-left2
+{
+    background-color: #227097;
+}
+
+.bg-left3
+{
+    background-color: #5522a0;
+}
+
+.bg-left4
+{
+    background-color: #a88538;
+}
+
+.bg-right1
+{
+    background-image: url("https://static5.depositphotos.com/1008134/439/i/950/depositphotos_4394435-stock-photo-cosmos-flowers-in-sunset.jpg");
+}
+
+.bg-right2
+{
+    background-image: url("https://st4.depositphotos.com/1001378/38357/i/1600/depositphotos_383575188-stock-photo-clouds-panorama-dramatic-sunset-sky.jpg");
+}
+
+.bg-right3
+{
+    background-image: url("https://st3.depositphotos.com/3584689/17499/i/1600/depositphotos_174993138-stock-photo-scenery-castle-thorn-solar-eclipse.jpg");
+}
+
+.bg-right4
+{
+    background-image: url("https://st2.depositphotos.com/1046670/5401/i/950/depositphotos_54014113-stock-photo-eagle.jpg");
+}
