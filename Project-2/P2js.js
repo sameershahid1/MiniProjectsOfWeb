@@ -28,7 +28,7 @@ const ChangeSlide=(Direction)=>{
         if(activeSlideIndex<0)
         {
             activeSlideIndex=SlidesLength-1;
-        }
+        } 
     }
     RightSlide.style.transform=`translateY(-${activeSlideIndex*SliderHeight}px)`;
     LeftSlide.style.transform=`translateY(${activeSlideIndex*SliderHeight}px)`;
