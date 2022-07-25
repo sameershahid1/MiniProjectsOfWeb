@@ -1,1 +1,1 @@
-# This Repositry contains all of my Mini web Projects using HTML, CSS and JS. 
+# This Repositry Contains all of my Mini Web-Projects that's, I have created through HTML, CSS and JavaScript.
