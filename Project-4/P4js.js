@@ -5,6 +5,7 @@ const RandomNumberGenerator=()=>(Math.floor(Math.random()*colors.length));
 
 const ColorChanger=()=>{
     const randomNumber=RandomNumberGenerator(); 
+    document.body.main
     document.body.style.backgroundColor=colors[randomNumber];
     color.textContent=colors[randomNumber];
 };
