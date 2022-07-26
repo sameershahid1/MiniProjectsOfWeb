@@ -1,5 +1,5 @@
-@import url("https://fonts.googleapis.com/css?family=Open+sans|Roboto:400,700&display=swap");
-
+/*@import url("https://fonts.googleapis.com/css?family=Open+sans|Roboto:400,700&display=swap");
+*/
 
 
 /*Variables*/
@@ -46,6 +46,8 @@
     --max-width: 1170px;
     --fixed-width: 620px;
 }
+
+
 
 
 
