@@ -36,3 +36,60 @@ const reviews = [
         "Edison bulb put a bird on it humblebrag, marfa pok pok heirloom fashion axe cray stumptown venmo actually seitan. VHS farm-to-table schlitz, edison bulb pop-up 3 wolf moon tote bag street art shabby chic. ",
     },
   ];
+
+const img=document.getElementById("person-img");
+const Name=document.getElementById("author");
+const job=document.getElementById("job");
+const info=document.getElementById("info");
+const PreBtn=document.querySelector(".prev-btn");
+const NextBtn=document.querySelector(".next-btn");
+const RandomBtn=document.querySelector(".random-btn");
+let counter=0;
+
+const ShowingPerson=()=>{
+  img.src=reviews[counter].img;
+  Name.textContent=reviews[counter].name;
+  job.textContent=reviews[counter].job;
+  info.textContent=reviews[counter].text;
+}
+
+const Next=()=>{
+  if(counter<reviews.length)
+  {
+     counter++;
+  }
+  else 
+  {
+    counter=0;
+  }
+  ShowingPerson();
+}
+const Pre=()=>{
+  if(counter>=0)
+  {
+     counter--;
+  }
+  else 
+  {
+    counter=reviews.length-1;
+  }
+  ShowingPerson();
+}
+const RandomPicker=()=>{
+  counter=Math.floor(Math.random()*reviews.length);
+   ShowingPerson();
+}
+
+
+
+window.addEventListener("DOMContentLoaded",ShowingPerson);
+
+
+NextBtn.addEventListener("click",Next);
+PreBtn.addEventListener("click",Pre);
+RandomBtn.addEventListener("click",RandomPicker);
+
+
+
+
+

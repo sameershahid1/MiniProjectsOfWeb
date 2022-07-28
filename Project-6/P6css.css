@@ -115,10 +115,6 @@ p{
     {
          font-size:1rem;
     }
-    p
-    {
-         font-size:0.875;
-    }
 
     body{
         font-size: 1rem;
@@ -188,7 +184,7 @@ main
 .review
 {
     background-color: var(--clr-white);
-    padding:1.25rem 2rem;
+    padding:1.5rem 2rem;
     border-radius:var(--radius);
     box-shadow:var(--light-shadow);
     transition: var(--transition);
@@ -213,7 +209,7 @@ main
 
 #person-img
 {
-    width: 100px;
+    width: 100%;
     display: block;
     height: 100%;
     object-fit: cover;
@@ -227,7 +223,7 @@ main
 {
     font-family:"Font Awesome 5 Free";
     font-weight: 900;
-    content:"\91e";
+    content:"\f10e";
     position:absolute;
     top:0;
     left:0;
@@ -248,7 +244,7 @@ main
     height:100%;
     background-color:var(--clr-primary-5);
     position:absolute;
-    top:-00.25rem;
+    top:-0.25rem;
     right: -0.5rem;
     border-radius:50%;
 }
@@ -260,7 +256,7 @@ main
 
 #job
 {
-    margin-bottom:0.25rem;
+    margin-bottom:0.5rem;
     text-transform: uppercase;
     color:var(--clr-primary-5);
     font-size: 0.85rem;
@@ -289,7 +285,7 @@ main
 
 .random-btn
 {
-    margin-top:0.25;
+    margin-top:0.5rem;
     background-color: var(--clr-primary-10);
     color: var(--clr-primary-5);
     padding:0.25rem 0.5rem;
@@ -300,7 +296,7 @@ main
     cursor:pointer;
 }
 
-.random-btn
+.random-btn:hover
 {
     background-color: var(--clr-primary-5);
     color: var(--clr-primary-1);
