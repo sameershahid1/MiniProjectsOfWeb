@@ -160,7 +160,7 @@ body
     .Card-Component
     {
         flex-direction:row;
-        margin-top:8rem;
+        margin-top:6rem;
         width:50%;
         height:35rem;
     }
