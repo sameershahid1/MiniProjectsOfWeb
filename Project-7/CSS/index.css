@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap');
+
+/*Creating Global Variables*/
+:root
+{
+    /*Primary Colors*/
+    --Primary-1:hsl(158,36%,37%);
+    --Primary-3: hsl(158, 55%, 20%);
+    --Primary-2:hsl(30,38%,92%);
+
+    /*Neutral Colors*/
+    --Neutral-1:hsl(212,21%,14%);
+    --Neutral-2:hsl(228,12%,48%);
+    --Neutral-3:hsl(0,0%,100%);
+
+    /*Body Font*/
+    --body-font:14px;
+
+    /*Mobile and Desktop Layout*/
+    --Mobile:375px;
+    --Desktop:1440px;
+
+    /*Border-Radius*/
+    --radius:13px;
+
+    /*Sadow*/
+    --shadow:0 0 15px 1px rgba(0,0,0,0.2);
+}
+
+*,::after,::before
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Global Settings*/
+body
+{
+    width:100%;
+    height:100%;
+    background-color: var(--Primary-2);
+    color: var(--Neutral-2);
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+
+/*Card-Component*/
+.Card-Component
+{
+    display: flex;
+    flex-direction: column;
+    margin:1.5rem 1rem 0 1rem;
+    background-color: var(--Neutral-3);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    height:38rem;
+}
+
+/*Card-Component Image Section*/
+.Card-Component__Image>figure,
+.Card-Component__Image>figure>img
+{
+    width:100%;
+    height:100%;
+}
+
+.Card-Component__Image>figure>img
+{
+    border-top-left-radius:var(--radius);
+    border-top-right-radius: var(--radius);
+}
+
+
+/*Card-Component Info Section*/
+.Card-Component__Info
+{
+    display: flex;
+    flex-flow: column wrap;
+    margin:1rem 1rem 1rem 1.3rem;
+}
+
+.Card-Component__Info__topic>span
+{
+    letter-spacing:0.4rem;
+    font-size:0.7rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/*Card-Component Info Title*/
+.Card-Component__Info__title
+{
+    font-size:1.5rem;
+    color:var(--Neutral-1);
+    margin:0.6rem 0;
+    text-transform: capitalize;
+}
+
+.Card-Component__Info__detail>p
+{
+    line-height:1.3rem;
+    font-size:0.9rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight:500;
+}
+
+
+/*Card-Component Info Price*/
+.Card-Component__Info__Price
+{
+   display: flex;
+   align-items: center;
+   gap:1rem;
+   margin:1rem 0;
+}
+
+.Card-Component__Info__Price>:nth-child(1)
+{
+    font-weight:900;
+    font-size:2.1rem;
+    color:var(--Primary-1);
+}
+
+.Card-Component__Info__Price>:nth-child(2)
+{
+    text-decoration: line-through;
+}
+
+/*Card-Component Info Btn*/
+
+.Card-Component__Info__Btn
+{
+    height:2.9rem;
+}
+
+.Card-Component__Info__Btn>button
+{
+    width:100%;
+    height:100%;
+    border-radius:10px;
+    background-color: var(--Primary-1);
+    color: white;
+    font-weight: bolder;
+    outline: none;
+    border:none;
+}
+
+.Card-Component__Info__Btn>button:active
+{
+    background-color:var(--Primary-3);
+}
+
+/*Making Into for Desktop Computer*/
+@media screen and (min-width:768px) 
+{
+    /*Card-Component*/
+    .Card-Component
+    {
+        flex-direction:row;
+        margin-top:8rem;
+        width:50%;
+        height:35rem;
+    }
+
+    /*Card-Component Image*/
+
+    .Card-Component__Image>figure>img
+    {
+        border-top-right-radius: 0;
+        border-bottom-left-radius: var(--radius);
+    }
+
+    /*Card-Component Info and Image*/
+    .Card-Component__Info,
+    .Card-Component__Image
+    {
+        flex:1;
+    }
+    
+    .Card-Component__Info
+    {
+        margin-top:2rem;
+        margin-left:2rem;
+    }
+     
+    /*Card-Component Title*/
+    .Card-Component__Info__title
+    {
+        font-size:2.2rem;
+        word-spacing:0.3rem;
+        line-height:3.3rem;
+    }
+
+    /*Card-Component Detail*/
+    .Card-Component__Info__detail>p
+    {
+        margin:1rem 0;
+        font-size:1rem;
+        line-height:1.5rem;
+        width:75%;
+    }
+
+    /*Card-Component Price*/
+    .Card-Component__Info__Price
+    {
+        gap:2rem;
+    }
+
+    .Card-Component__Info__Price>:nth-child(1)
+    {
+        font-size:2.5rem;
+    }
+
+    /*Card-Component Button*/
+    .Card-Component__Info__Btn
+    {
+        width:80%;
+        height:11%;
+        margin:1rem auto;
+    }
+
+}
+
