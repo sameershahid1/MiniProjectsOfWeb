@@ -5,7 +5,7 @@
 {
     /*Primary Colors*/
     --Primary-1:hsl(158,36%,37%);
-    --Primary-3: hsl(158, 55%, 20%);
+    --Primary-3: hsl(158, 55%, 18%);
     --Primary-2:hsl(30,38%,92%);
 
     /*Neutral Colors*/
@@ -146,9 +146,19 @@ body
     font-weight: bolder;
     outline: none;
     border:none;
+    cursor: pointer;
 }
 
-.Card-Component__Info__Btn>button:active
+.Card-Component__Info__Btn>button
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:0.7rem;
+    font-size:1rem;
+}
+
+.Card-Component__Info__Btn>button:hover
 {
     background-color:var(--Primary-3);
 }
@@ -217,9 +227,9 @@ body
     /*Card-Component Button*/
     .Card-Component__Info__Btn
     {
-        width:80%;
+        width:90%;
         height:11%;
-        margin:1rem auto;
+        margin-top:1rem;
     }
 
 }
