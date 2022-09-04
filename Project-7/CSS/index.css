@@ -55,7 +55,7 @@ body
     background-color: var(--Neutral-3);
     border-radius: var(--radius);
     box-shadow: var(--shadow);
-    height:38rem;
+    height:39rem;
 }
 
 /*Card-Component Image Section*/
@@ -156,6 +156,7 @@ body
     align-items: center;
     gap:0.7rem;
     font-size:1rem;
+    margin-top:1rem;
 }
 
 .Card-Component__Info__Btn>button:hover
