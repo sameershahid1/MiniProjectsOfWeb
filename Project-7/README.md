@@ -8,7 +8,9 @@ Users should be able to:
 
 ### Screenshot
 
+![Screenshot from 2022-09-05 02-53-42](https://user-images.githubusercontent.com/75313862/188335005-ae42170f-2c05-48fd-a351-9f232fa17d50.png)
 
+![Screenshot from 2022-09-05 03-05-06](https://user-images.githubusercontent.com/75313862/188335214-e5ce3ae1-9b2f-4d36-b94a-f7dc10fdfc4a.png)
 
 
 ### Links
@@ -23,7 +25,6 @@ Users should be able to:
 - Flexbox
 - Mobile-first workflow
 
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
 
 
 
