@@ -159,18 +159,29 @@ li {
     border: 1px solid white;
     border-radius:50%;
     padding: 0.4rem;
+    cursor: pointer;
 }
 
 .Footer__Social-Icons li:hover
 {
     color: var(--Primary-2);
     border:2px solid var(--Primary-2);
+    transform: scale(1.1);
     transition: 0.8s ease-in-out all;
 }
 
 
 @media screen and (max-width:1200px)
 {
+    .Header
+    {
+        margin-top:2rem;
+    }
+    .Header__Logo>img
+    {
+       width:8rem;
+    }
+
     .Background-image,
     .Background-image>img 
     {
@@ -181,11 +192,12 @@ li {
     .Body
     {
         padding: 0 2rem;
-        align-items: center;        
+        align-items:flex-start;
     }
 
     .Huddle-Container
     {
+        margin-top:1.1rem;
         flex-direction:column;
     }
 
@@ -218,10 +230,12 @@ li {
         height:2.5rem;
         font-size:1rem;
     }
-
-    .Huddle-Container__right>:nth-child(2)
+    
+    footer
     {
-        margin-bottom:2rem;
+        display: flex;
+        justify-content: center;
+        width:100%;
     }
 
     .Footer__Social-Icons
