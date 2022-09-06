@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&family=Poppins:wght@600&display=swap');
+
+
+/*Creating Variables*/
+:root
+{
+    /*Primary Colors*/
+    --Primary-1:hsl(257,40%,49%);
+    --Primary-2:hsl(300,69%,71%);
+}
+
+/*Global Settings*/
+*,
+::after,
+::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    width:100vw;
+    height:100vh;
+    background-color: var(--Primary-1);
+}
+/*BackGround Image*/
+.Background-image,
+.Background-image>img {
+    width: 96%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.Background-image {
+    z-index: -1;
+}
+
+/*Body Settings*/
+.Body
+{
+    width:100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    padding:0 5rem;
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+}
+
+
+/*Header*/
+.Header
+{
+  margin-top:2.7rem;
+}
+
+.Header__Logo>img
+{
+    width:200px;
+}
+
+
+/*Huddle Container*/
+.Huddle-Container
+{
+    display: flex;
+    justify-content: center;
+    gap:2rem;
+
+}
+
+/*Huddle Container Left side*/
+.Huddle-Container__Left-side
+{
+    padding-top:2.7rem;
+    padding-left:1.3rem;
+}
+.Huddle-Container__Left-side img
+{
+   min-width:45rem;
+}
+
+
+/*Huddle Container Right side*/
+.Huddle-Container__right,
+.Huddle-Container__right__Info>div
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.Huddle-Container__right
+{
+    padding-top:5.5rem;
+    gap:1rem;
+}
+
+
+.Huddle-Container__right__Info>div:nth-child(1)
+{
+   font-size:3rem;
+   font-family: 'Poppins', sans-serif;
+}
+
+.Huddle-Container__right__Info>div:nth-child(2)
+{
+    margin:1rem 0;
+    width:79%;
+    font-size:1.1rem;
+}
+
+.Huddle-Container__right button
+{
+    padding: 1rem 4rem 1rem 4rem;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+    font-size:1.2rem;
+    color: var(--Primary-1);
+    box-shadow:0 10px 15px 1px rgba(0, 0, 0, 0.3);
+}
+
+.Huddle-Container__right button:hover
+{
+    background-color: var(--Primary-2);
+    color: white;
+    transition:0.8s ease-in-out all;
+}
+
+/*Footer*/
+li {
+    list-style-type: none;
+}
+.Footer__Social-Icons
+{
+    margin-bottom:2.5rem;
+}
+
+
+.Footer__Social-Icons>ul
+{
+    display: flex;
+    justify-content: flex-end;
+    gap:1rem;
+}
+
+.Footer__Social-Icons li
+{  
+    font-size: 1.2rem;
+    border: 1px solid white;
+    border-radius:50%;
+    padding: 0.4rem;
+}
+
+.Footer__Social-Icons li:hover
+{
+    color: var(--Primary-2);
+    border:2px solid var(--Primary-2);
+    transition: 0.8s ease-in-out all;
+}
