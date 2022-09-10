@@ -6,6 +6,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <title>Frontend Mentor | [Challenge Name Here]</title>
   <link rel="stylesheet" href="./CSS/Style.css" />
+  <script src="https://kit.fontawesome.com/04f9b2276c.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
@@ -18,10 +19,43 @@
   <div class="simple-booking-container__left-side__Phone-Shape">
     <div class="simple-booking-container__left-side__Phone-Shape__Shape"></div>
     <div class="simple-booking-container__left-side__Phone-Shape__header">
-      
+       <div>
+        <i class="fa-solid fa-chevron-left ICON"></i>
+        <img src='./images/avatar.jpg' alt="Avatar Image">
+        <div>
+           <span>Samuel Green</span>
+           <span>Avaible to wait</span>
+        </div>
+       </div>
+       <div>
+           <i class="fa-sharp fa-solid fa-ellipsis-vertical ICON"></i>
+       </div>
     </div>
     <div class="simple-booking-container__left-side__Phone-Shape__main">
-
+      <p class="chat Chat-left">That sounds great. l'd be happy with that.</p>
+      <p class="chat Chat-left">Could you send over some pictures of your dog, please?</p>
+      <div class="img-container">
+         <img src="./images/dog-image-1.jpg" alt="Dog1">
+         <img src="./images//dog-image-2.jpg" alt="Dog2">
+         <img src="./images//dog-image-3.jpg" alt="Dog3">
+      </div>
+      <p class="chat Chat-right">Here area few pictures. she's a happy girl</p>
+      <p class="chat Chat-right">Can you make it?</p>
+      <p class="chat Chat-left">She looks so happy. The time we discussed works. How long shall I take her out for?</p>
+      <div class="Routens">
+        <i class="fa-regular fa-circle"></i>
+        <span>30 minute walk</span>
+        <span>$29</span>
+      </div>
+      <div class="Routens">
+        <i class="fa-regular fa-circle"></i>
+        <span>1 hour walk</span>
+        <span>$49</span>
+      </div>
+      <form class="message">
+        <input placeholder="Type a message" name="message" type="text">
+        <i class="fa-solid fa-circle-chevron-right"></i>
+      </form>
     </div>
     <div class="simple-booking-container__left-side__Phone-Shape__footer">
 
@@ -32,14 +66,12 @@
 
 <!--Simple Booking right side-->
 <section class="simple-booking-container__right-side">
-<div>
   <h2>Simple booking</h2>
   <p>Stay in touch with our dog walkers through the chat
      interface. This makes it easy to discuss arrangements
      and make bookings. Once the walk has been completed you
      can rate your walker and book again all through the chat.
   </p>
-</div>
 </section>
 
 </main>
